@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<style>body{background-color:white;}</style>
+<script src="lib/htmlwidgets-1.5.4/htmlwidgets.js"></script>
+<script src="lib/jquery-3.5.1/jquery.min.js"></script>
+<script src="lib/proj4js-2.3.15/proj4.js"></script>
+<link href="lib/highcharts-9.3.1/css/motion.css" rel="stylesheet" />
+<script src="lib/highcharts-9.3.1/highcharts.js"></script>
+<script src="lib/highcharts-9.3.1/highcharts-3d.js"></script>
+<script src="lib/highcharts-9.3.1/highcharts-more.js"></script>
+<script src="lib/highcharts-9.3.1/modules/stock.js"></script>
+<script src="lib/highcharts-9.3.1/modules/map.js"></script>
+<script src="lib/highcharts-9.3.1/modules/data.js"></script>
+<script src="lib/highcharts-9.3.1/modules/exporting.js"></script>
+<script src="lib/highcharts-9.3.1/modules/offline-exporting.js"></script>
+<script src="lib/highcharts-9.3.1/modules/drilldown.js"></script>
+<script src="lib/highcharts-9.3.1/modules/item-series.js"></script>
+<script src="lib/highcharts-9.3.1/modules/overlapping-datalabels.js"></script>
+<script src="lib/highcharts-9.3.1/modules/annotations.js"></script>
+<script src="lib/highcharts-9.3.1/modules/export-data.js"></script>
+<script src="lib/highcharts-9.3.1/modules/funnel.js"></script>
+<script src="lib/highcharts-9.3.1/modules/heatmap.js"></script>
+<script src="lib/highcharts-9.3.1/modules/treemap.js"></script>
+<script src="lib/highcharts-9.3.1/modules/sankey.js"></script>
+<script src="lib/highcharts-9.3.1/modules/dependency-wheel.js"></script>
+<script src="lib/highcharts-9.3.1/modules/organization.js"></script>
+<script src="lib/highcharts-9.3.1/modules/solid-gauge.js"></script>
+<script src="lib/highcharts-9.3.1/modules/streamgraph.js"></script>
+<script src="lib/highcharts-9.3.1/modules/sunburst.js"></script>
+<script src="lib/highcharts-9.3.1/modules/vector.js"></script>
+<script src="lib/highcharts-9.3.1/modules/wordcloud.js"></script>
+<script src="lib/highcharts-9.3.1/modules/xrange.js"></script>
+<script src="lib/highcharts-9.3.1/modules/tilemap.js"></script>
+<script src="lib/highcharts-9.3.1/modules/venn.js"></script>
+<script src="lib/highcharts-9.3.1/modules/gantt.js"></script>
+<script src="lib/highcharts-9.3.1/modules/timeline.js"></script>
+<script src="lib/highcharts-9.3.1/modules/parallel-coordinates.js"></script>
+<script src="lib/highcharts-9.3.1/modules/bullet.js"></script>
+<script src="lib/highcharts-9.3.1/modules/coloraxis.js"></script>
+<script src="lib/highcharts-9.3.1/modules/dumbbell.js"></script>
+<script src="lib/highcharts-9.3.1/modules/lollipop.js"></script>
+<script src="lib/highcharts-9.3.1/modules/series-label.js"></script>
+<script src="lib/highcharts-9.3.1/plugins/motion.js"></script>
+<script src="lib/highcharts-9.3.1/custom/reset.js"></script>
+<script src="lib/highcharts-9.3.1/modules/boost.js"></script>
+<script src="lib/highchart-binding-0.9.4/highchart.js"></script>
+
+</head>
+<body>
+<div id="htmlwidget-c1bf3c02fac62068d266" style="width:100%;height:500px;" class="highchart html-widget"></div>
+<script type="application/json" data-for="htmlwidget-c1bf3c02fac62068d266">{"x":{"hc_opts":{"chart":{"reflow":true},"title":{"text":null},"yAxis":{"title":{"text":"Counts"},"type":"linear"},"credits":{"enabled":false},"exporting":{"enabled":false},"boost":{"enabled":false},"plotOptions":{"series":{"label":{"enabled":false},"turboThreshold":0,"showInLegend":true},"treemap":{"layoutAlgorithm":"squarified"},"scatter":{"marker":{"symbol":"circle"}}},"series":[{"name":"Normal","data":[{"Gene":"cacng4","Sample":"Normal","Counts":9.209810523,"y":9.209810523,"name":"cacng4"},{"Gene":"cacng5","Sample":"Normal","Counts":0.890301546,"y":0.890301546,"name":"cacng5"},{"Gene":"cdh10","Sample":"Normal","Counts":4.73387678,"y":4.73387678,"name":"cdh10"},{"Gene":"cdh12","Sample":"Normal","Counts":6.2381612,"y":6.2381612,"name":"cdh12"},{"Gene":"cdh15","Sample":"Normal","Counts":2.11546414,"y":2.11546414,"name":"cdh15"},{"Gene":"cdh19","Sample":"Normal","Counts":6.111548711,"y":6.111548711,"name":"cdh19"},{"Gene":"cdh2","Sample":"Normal","Counts":6.506132129,"y":6.506132129,"name":"cdh2"},{"Gene":"cdh20","Sample":"Normal","Counts":6.060785807,"y":6.060785807,"name":"cdh20"},{"Gene":"cdh22","Sample":"Normal","Counts":5.108535795,"y":5.108535795,"name":"cdh22"},{"Gene":"cdh4","Sample":"Normal","Counts":6.588305427,"y":6.588305427,"name":"cdh4"},{"Gene":"cdh7","Sample":"Normal","Counts":3.126069583,"y":3.126069583,"name":"cdh7"},{"Gene":"fgfr4","Sample":"Normal","Counts":7.73259184,"y":7.73259184,"name":"fgfr4"},{"Gene":"grin2a","Sample":"Normal","Counts":6.710497417,"y":6.710497417,"name":"grin2a"},{"Gene":"itga7","Sample":"Normal","Counts":12.20181734,"y":12.20181734,"name":"itga7"},{"Gene":"itgax","Sample":"Normal","Counts":8.483096839,"y":8.483096839,"name":"itgax"}],"type":"column"},{"name":"Tumor","data":[{"Gene":"cacng4","Sample":"Tumor","Counts":11.65039015,"y":11.65039015,"name":"cacng4"},{"Gene":"cacng5","Sample":"Tumor","Counts":2.996336297,"y":2.996336297,"name":"cacng5"},{"Gene":"cdh10","Sample":"Tumor","Counts":5.00095271,"y":5.00095271,"name":"cdh10"},{"Gene":"cdh12","Sample":"Tumor","Counts":4.046418504,"y":4.046418504,"name":"cdh12"},{"Gene":"cdh15","Sample":"Tumor","Counts":4.072444373,"y":4.072444373,"name":"cdh15"},{"Gene":"cdh19","Sample":"Tumor","Counts":7.568867694,"y":7.568867694,"name":"cdh19"},{"Gene":"cdh2","Sample":"Tumor","Counts":8.712312564,"y":8.712312564,"name":"cdh2"},{"Gene":"cdh20","Sample":"Tumor","Counts":2.952436363,"y":2.952436363,"name":"cdh20"},{"Gene":"cdh22","Sample":"Tumor","Counts":3.908648061,"y":3.908648061,"name":"cdh22"},{"Gene":"cdh4","Sample":"Tumor","Counts":5.615805276,"y":5.615805276,"name":"cdh4"},{"Gene":"cdh7","Sample":"Tumor","Counts":6.429746959,"y":6.429746959,"name":"cdh7"},{"Gene":"fgfr4","Sample":"Tumor","Counts":9.210362173,"y":9.210362173,"name":"fgfr4"},{"Gene":"grin2a","Sample":"Tumor","Counts":5.83020546,"y":5.83020546,"name":"grin2a"},{"Gene":"itga7","Sample":"Tumor","Counts":8.653313585,"y":8.653313585,"name":"itga7"},{"Gene":"itgax","Sample":"Tumor","Counts":9.4354067,"y":9.4354067,"name":"itgax"}],"type":"column"}],"xAxis":{"type":"category","title":{"text":"Gene"},"categories":null},"colors":["blue","red"]},"theme":{"chart":{"backgroundColor":"transparent"},"colors":["#7cb5ec","#434348","#90ed7d","#f7a35c","#8085e9","#f15c80","#e4d354","#2b908f","#f45b5b","#91e8e1"]},"conf_opts":{"global":{"Date":null,"VMLRadialGradientURL":"http =//code.highcharts.com/list(version)/gfx/vml-radial-gradient.png","canvasToolsURL":"http =//code.highcharts.com/list(version)/modules/canvas-tools.js","getTimezoneOffset":null,"timezoneOffset":0,"useUTC":true},"lang":{"contextButtonTitle":"Chart context menu","decimalPoint":".","downloadCSV":"Download CSV","downloadJPEG":"Download JPEG image","downloadPDF":"Download PDF document","downloadPNG":"Download PNG image","downloadSVG":"Download SVG vector image","downloadXLS":"Download XLS","drillUpText":"◁ Back to {series.name}","exitFullscreen":"Exit from full screen","exportData":{"annotationHeader":"Annotations","categoryDatetimeHeader":"DateTime","categoryHeader":"Category"},"hideData":"Hide data table","invalidDate":null,"loading":"Loading...","months":["January","February","March","April","May","June","July","August","September","October","November","December"],"noData":"No data to display","numericSymbolMagnitude":1000,"numericSymbols":["k","M","G","T","P","E"],"printChart":"Print chart","resetZoom":"Reset zoom","resetZoomTitle":"Reset zoom level 1:1","shortMonths":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"shortWeekdays":["Sat","Sun","Mon","Tue","Wed","Thu","Fri"],"thousandsSep":" ","viewData":"View data table","viewFullscreen":"View in full screen","weekdays":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]}},"type":"chart","fonts":[],"debug":false},"evals":[],"jsHooks":[]}</script>
+</body>
+</html>
