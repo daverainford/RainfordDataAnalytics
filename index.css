@@ -1,0 +1,360 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+
+/* HEADER DIV */
+#heading_div {
+	display: inline-block;
+	text-align: center;
+	width: 100%;
+	height:auto;
+	background-color: white;
+}
+
+.background {
+	width: 100%;
+	height: 100%;
+}
+/* HEADER DIV */
+
+
+
+
+
+/* TOOLS DIV */
+#tools_div {
+	display: block;
+	width: 100%;
+	height: 42vh;
+	text-align: center;
+}
+
+#tools_header {
+	font-family: 'Helvetica', 'Arial', sans-serif;
+	font-size: 10vh;
+	font-weight: bold;
+}
+
+#seqtrim_butt {
+	font-family: 'Helvetica', 'Arial', sans-serif;
+	font-size: 4vh;
+	font-weight: bold;
+	border: 4px solid black;
+	background-color: white;
+	color: black;
+	border-radius: 6px;
+	cursor: pointer;
+}
+#seqtrim_butt:hover {
+	border: 4px solid gray;
+}
+/* TOOLS DIV */
+
+
+
+
+/* PROJECTS DIV */
+#projects_div {
+	display: block;
+	width: 100%;
+	height: 34vh;
+	text-align: center;
+	background-color: black;
+}
+
+.link_butt {
+	font-family: 'Helvetica', 'Arial', sans-serif;
+	font-size: 4vh;
+	font-weight: bold;
+	border: 4px solid white;
+	background-color: black;
+	color: white;
+	border-radius: 6px;
+	cursor: pointer;
+}
+.link_butt:hover {
+	border: 4px solid gray;
+}
+
+#projects_header {
+	font-family: 'Helvetica', 'Arial', sans-serif;
+	font-size: 10vh;
+	font-weight: bold;
+	color:white;
+}
+/* PROJECTS DIV */
+
+
+
+
+
+/* PPI DIV */
+#ppi_div {
+	display: none;
+	text-align: center;
+	width: 100%;
+	height: 390vh;
+	text-align: center;
+	background-color: white;
+	
+}
+
+#volcano {
+	height: 60vh;
+	width: 40vw;
+}
+
+#ppi {
+	height: 110vh;
+	width: 40vw;
+}
+
+#table {
+	height: 60vh;
+	width: 70vw;
+}
+
+table, th, td {
+	width: 75vw;
+	border: 1.5px solid;
+	margin: 0 auto;
+}
+
+th {
+	font-family: 'Helvetica', 'Arial', sans-serif;
+	font-size: 2vh;
+	font-weight: bold;
+}
+
+td {
+	font-family: 'Helvetica', 'Arial', sans-serif;
+	font-size: 1.5vh;
+}
+
+.proj_text {
+	font-family: 'Helvetica', 'Arial', sans-serif;
+	font-size: 3.4vh;
+	text-align: left;
+	margin-left: 10vw;
+	margin-right: 10vw;
+}
+
+.charts {
+	width: 70vw;
+	height: 85vh;
+	margin: 0 auto;
+}
+/* PPI DIV */
+
+
+
+
+/* CONTACT DIV */
+#contact_div {
+	display: block;
+	width: 100%;
+	height: 150vh;
+	text-align: center;
+	background-color: white;
+}
+
+#contact_header {
+	font-family: 'Helvetica', 'Arial', sans-serif;
+	font-size: 10vh;
+	font-weight: bold;
+	color: black;
+}
+
+#email_div {
+	display: block;
+	width: 70vw;
+	height: 92.5vh;
+	text-align: center;
+	background-color: white;
+	border: 4px solid black;
+	margin: 0 auto;
+	border-radius: 6px;
+}
+
+#email_header {
+	font-family: 'Helvetica', 'Arial', sans-serif;
+	font-size: 6vh;
+	font-weight: bold;
+	color: black;
+}
+
+.label {
+	font-family: 'Helvetica', 'Arial', sans-serif;
+	font-size: 4vh;
+	font-weight: bold;
+	color: black;
+}
+
+.select{
+	width: auto;
+	font-family: 'Helvetica', 'Arial', sans-serif;
+	font-size: 3vh;
+	color: black;
+	text-align: center;
+	border-radius: 4px;
+}
+
+.select:hover {
+	cursor: pointer;
+}
+
+.option {
+	font-family: 'Helvetica', 'Arial', sans-serif;
+	font-size: 3vh;
+	color: black;
+}
+
+.text_label {
+	font-family: 'Helvetica', 'Arial', sans-serif;
+	font-size: 4vh;
+	font-weight: bold;
+	color: black;
+	margin-right: 10px;
+}
+
+.input {
+	width: auto;
+	font-family: 'Helvetica', 'Arial', sans-serif;
+	font-size: 3vh;
+	color: black;
+	text-align: center;
+	border-radius: 4px;
+	margin-bottom: 10px;
+}
+
+.textarea {
+	font-family: 'Helvetica', 'Arial', sans-serif;
+	font-size: 3vh;
+	height: 25vh;
+	width: 50vw;
+}
+
+#msg_subject {
+	font-family: 'Helvetica', 'Arial', sans-serif;
+	font-size: 3vh;
+	color: black;
+	margin-right: 10px;
+	width: 50vw;
+}
+
+#msg_submit {
+	display: inline-block;
+	font-family: 'Helvetica', 'Arial', sans-serif;
+	font-size: 3vh;
+	width: 50vw;
+	font-weight: bold;
+	color: white;
+	border-radius: 5px;
+	background: black;
+}
+#msg_submit:hover {
+	cursor: pointer;
+	color: gray;
+}
+/* CONTACT DIV */
+
+
+
+
+/* FOOTER DIV */
+#footer_div {
+	position: fixed;
+	bottom:0px;
+	display: inline-block;
+	text-align: center;
+	width: 100%;
+	height:4vh;
+	background-color: black;
+	border-top: solid;
+	border-width: 1.5px;
+	border-color: white;
+	padding: 5px 0;
+}
+
+.navlink {
+	display: inline-block;
+	font-family: 'Helvetica', 'Arial', sans-serif;
+	font-size: 3vh;
+	font-weight: bold;
+	margin-right: 18vw;
+	color: white;
+	padding: 0;
+	border: none;
+	background: none;
+}
+.navlink:hover {
+	cursor: pointer;
+	color: gray;
+}
+
+#contact {
+	margin-right: 0px;
+}
+/* FOOTER DIV */
+
+
+
+
+
+
+
+
+
+
+
+
+
+

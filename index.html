@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<meta content="width=device-width, initial-scale=1" name="viewport"/>
+	<meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0"/> 
+	<link href="index.css" rel="stylesheet"/>
+	<link src="https://pyscript.net/alpha/pyscript.css"/>
+</head>
+ 
+<body>
+	<!-- Header div -->
+	<div id= "heading_div">
+		<img src="background.jpg" class = 'background'>
+	</div>
+	
+	<!-- Tools div -->
+	<div id = 'tools_div'>
+		<label id = 'tools_header'>TOOLS</label><br>
+		<br>
+		<br>
+		<button onclick = "window.open('https://github.com/daverainford/SeqTrim', '_blank')" id = 'seqtrim_butt'>
+			SeqTrim: SeqTrim is a fast and streamlined function<br> 
+			to trim low-quality bases and remove adaptor<br> 
+			sequences. This tool is compatible with any sequences<br>
+			stored in FASTQ format.
+		</button>
+	</div>
+	
+	<!-- Projects div -->
+	<div id = 'projects_div'>
+		<label id = 'projects_header'>PROJECTS</label><br>
+		<br>
+		<br>
+		<button class = 'link_butt' id = 'ppi_butt'>
+		Pathway Analysis of Differentially Expressed Membrane<br>
+		Associated Genes in Breast Cancer
+		</button>
+		<br>
+		<br>
+	</div>
+	
+	<!-- PPI div -->
+		<div id = 'ppi_div'>
+			<label class = 'label' id = 'diff_label'>
+				Pathway Analysis of Differentially Expressed Membrane<br>
+				Associated Genes in Breast Cancer
+			</label><br>
+			<br>
+			<br>
+			<br>
+			<p class = 'proj_text'>
+			The objective of this project was to identify differentially expressed membrane associated genes (MAG) and their 
+			pathways in breast cancer RNA-Seq data. The epigenetic landscape of breast cancer and how it differs from normal 
+			breast tissue cells can be a lynchpin in drug discovery. Identifying cancer specific changes in MAG’s is vital in 
+			elucidating drug targets and developing novel cancer treatments such as immunotherapuetics and chemotherapeutics. Nine 
+			pathways were elucidated with differentially expressed genes (DEG) that are associated with tumor formation and 
+			proliferation. Understand gene-level differences in pathways like the ones identified in this project will help drive 
+			the development of novel cancer research a treatment in the future.
+			</p><br>
+			<br>
+			<label class = 'text_label' id = 'chart_label'>Figure 1: Tumor vs Normal Differential Expression</label><br>
+			<img src="charts/volcano_plot.png" id = 'volcano'><br>
+			<br>
+			<p class = 'proj_text'>
+				1029 STAR count matrices of RNA-Seq data were downloaded from TCGA-BRCA project publicly available datasets. Other 
+				breast cancer data and metrics were excluded to ensure homogeneity in experimental treatments across the sample 
+				set. 102 of the count matrices were from solid normal tissue (SNT) samples (N = 102), and the remaining 927 were from 
+				primary tumor (PT) samples (N = 927). After the count matrices were obtained, differentially expressed genes (DEG) in 
+				the PT samples were determined using Bioconductor’s edgeR and limma packages. A 0.5 p-value cutoff was used while 
+				calculating DEG’s. Differential expression of all significant DEG's is visualized in figure 1.
+			</p><br>
+			<br>
+			<label class = 'text_label' id = 'chart_label'>Figure 2: PPI Network</label><br>
+			<img src="charts/cluster_network.svg" id = 'ppi'><br>
+			<br>
+			<p class = 'proj_text'>
+				After all DEG’s were identified, DEG’s that fell within were above 1.5 log fold change (logFC) and below -1.5 logFC were filtered out. After 
+				differential gene expression analysis was complete, a DEG PPI-network was constructed using STRING db’s online tool (figure 2). 
+				Once the PPI-network was constructed, MCL gene clustering with an inflation parameter of 3 was performed. The 
+				clusters underwent filtering, excluding clusters with less than 6 genes and those that did not have interactions with 
+				the rest of the PPI-network, leaving 24 gene clusters remaining. 
+				The remaining clusters underwent pathway analysis using Cytoscape’s NDEx iQuery with a p-value cutoff of 0.5. Nine of the 
+				clusters were associated with tumor genesis, growth, and proliferation pathways were down-selected. These pathways are described in table 1, 
+				and their differential expression visualized in figure 4.
+			</p><br>
+			<br>
+			<label class = 'text_label'>Table 1: Pathyway Function</label><br>
+			<br>
+			<table>
+				  <tr>
+					<th>Epithelial to mesenchymal transition</th>
+					<th>Hippo-Merlin Signaling</th>
+					<th>Sphingolipid Metabolism</th>
+					<th>PI3K/AKT Signaling</th>
+					<th>Integrin Signaling</th>
+					<th>Chemokine Signaling</th>
+					<th>G Protein Signaling</th>
+					<th>Activating Invasion and Metastasis</th>
+					<th>Sustained Proliferative Signaling</th>
+				  </tr>
+				  <tr>
+					<td>The process in which epithelial cells undergo a transformation 
+						into a mesenchymal phenotype</td>
+					<td>The Hippo-Merlin pathway supresses cell growth and proliferation, 
+						and plays a role in apoptosis</td>
+					<td>Spingolipid metabolism plays a role in cell growth, adhesion, 
+						and recognition</td>
+					<td>PI3K/AKT Signaling promotes cell growth, survival, metabolism, 
+						and angiogensis</td>
+					<td>Integrin signaling controls cell shape, mobility, and acts as a 
+						cell cycle regulator</td>
+					<td>Chemokine signaling promotes and coordinates cell migration</td>
+					<td>G -protein signaling regulates a myriad of bodily processes, 
+						that can affect cell growth and migration</td>
+					<td>As the name suggest, this pathway encourages cell migration and 
+						mobility.</td>
+					<td>Sustained proliferative signaling  increases cell growth and division</td>
+				  </tr>
+			</table><br>
+			<br>
+			<label class = 'text_label'>Select Pathway to View Expression</label><br>
+			<br>
+			<select class = 'select' id = 'chart_select'>
+				<option class = 'option' hidden = "hidden">Select</option>
+				<option class = 'option'>Epithelial to mesenchymal transition</option>
+				<option class = 'option'>Activating Invasion and Metastasis</option>
+				<option class = 'option'>Sustained Proliferative Signaling</option>
+				<option class = 'option'>Hippo-Merlin Signaling Dysregulation</option>
+				<option class = 'option'>Sphingolipid Metabolism</option>
+				<option class = 'option'>PI3K/AKT Signaling</option>
+				<option class = 'option'>Integrin Signaling</option>
+				<option class = 'option'>Chemokine Signaling</option>
+				<option class = 'option'>G Protein Signaling</option>
+			</select><br>
+			<br>
+			<br>
+			<label class = 'text_label'>Figure 4: Tumor vs Normal Differential Expression</label><br>
+			<br>
+			<label class = 'text_label' style = 'display: none' id = 'chart_label'>Normal vs Tumor log2 Normalized Counts</label><br>
+			<iframe src="charts/1.html" style = 'display: block' id = 'c1' class = 'charts'></iframe>
+			<iframe src="charts/2.html" style = 'display: none' id = 'c2' class = 'charts'></iframe>
+			<iframe src="charts/3.html" style = 'display: none' id = 'c3' class = 'charts'></iframe>
+			<iframe src="charts/4.html" style = 'display: none' id = 'c4' class = 'charts'></iframe>
+			<iframe src="charts/5.html" style = 'display: none' id = 'c5' class = 'charts'></iframe>
+			<iframe src="charts/6.html" style = 'display: none' id = 'c6' class = 'charts'></iframe>
+			<iframe src="charts/7.html" style = 'display: none' id = 'c7' class = 'charts'></iframe>
+			<iframe src="charts/8.html" style = 'display: none' id = 'c8' class = 'charts'></iframe>
+			<iframe src="charts/9.html" style = 'display: none' id = 'c9' class = 'charts'></iframe>	
+		</div>
+	
+		<!-- Contact div -->
+	<div id = 'contact_div'>
+		<label id = 'contact_header'>CONTACT ME</label><br>
+		<br>
+		<br>
+		<label class = 'label'>Email: rainford.d.k@gmail.com</label><br>
+		<br>
+		<label class = 'label'>Phone: (708) 601 - 7555</label><br>
+		<br>
+		<br>
+		<div id = 'email_div'>
+			<label id = 'email_header'>Send me an email</label><br>
+			<br>
+			<br>
+			<label class = 'label'>Who are you?</label><br>
+				<br>
+				<select class = 'select' id = 'who_u'>
+					<option class = 'option' hidden="hidden">Select</option>
+					<option class = 'option'>Employer/Recruiter</option>
+					<option class = 'option'>Client</option>
+					<option class = 'option'>Other</option>
+				</select><br>
+				<br>
+				<label class = 'text_label'>Subject</label><br>	
+					<input type = 'text' id = 'msg_subject' class = 'input'><br>
+					<br>
+				<label class = 'text_label' id = 'body'>Body</label><br>	
+					<textarea class = 'textarea' id = 'msg_body'></textarea>
+					<br>
+					<br>
+			<button id = 'msg_submit'>Submit</button>
+		</div>
+	</div>	
+	
+	<!-- Footer div -->
+	<div id = 'footer_div'>
+		<button class="navlink" id="home" type="button">Home</button>
+		<button class="navlink" id="projects" type="button">Tools</button>
+		<button class="navlink" id="tools" type="button">Projects</button>
+		<button class="navlink" id="contact" type="button">Contact Me</button>
+	</div>
+	
+	<script src="index.js"></script>
+</body>
+</html>
