@@ -108,7 +108,7 @@ table {
 
 #tools_header {
 	font-family: 'Helvetica', 'Arial', sans-serif;
-	font-size: 10vh;
+	font-size: 9vh;
 	font-weight: bold;
 }
 
@@ -158,7 +158,7 @@ table {
 
 #projects_header {
 	font-family: 'Helvetica', 'Arial', sans-serif;
-	font-size: 10vh;
+	font-size: 9vh;
 	font-weight: bold;
 	color:white;
 }
@@ -240,7 +240,7 @@ td {
 
 #contact_header {
 	font-family: 'Helvetica', 'Arial', sans-serif;
-	font-size: 10vh;
+	font-size: 9vh;
 	font-weight: bold;
 	color: black;
 }
@@ -257,14 +257,14 @@ td {
 
 #email_header {
 	font-family: 'Helvetica', 'Arial', sans-serif;
-	font-size: 6vh;
+	font-size: 5vh;
 	font-weight: bold;
 	color: black;
 }
 
 .label {
 	font-family: 'Helvetica', 'Arial', sans-serif;
-	font-size: 4vh;
+	font-size: 3vh;
 	font-weight: bold;
 	color: black;
 }
@@ -272,7 +272,7 @@ td {
 .select{
 	width: auto;
 	font-family: 'Helvetica', 'Arial', sans-serif;
-	font-size: 3vh;
+	font-size: 2vh;
 	color: black;
 	text-align: center;
 	border-radius: 4px;
@@ -284,13 +284,13 @@ td {
 
 .option {
 	font-family: 'Helvetica', 'Arial', sans-serif;
-	font-size: 3vh;
+	font-size: 2vh;
 	color: black;
 }
 
 .text_label {
 	font-family: 'Helvetica', 'Arial', sans-serif;
-	font-size: 4vh;
+	font-size: 3vh;
 	font-weight: bold;
 	color: black;
 	margin-right: 10px;
@@ -299,7 +299,7 @@ td {
 .input {
 	width: auto;
 	font-family: 'Helvetica', 'Arial', sans-serif;
-	font-size: 3vh;
+	font-size: 2vh;
 	color: black;
 	text-align: center;
 	border-radius: 4px;
@@ -308,7 +308,7 @@ td {
 
 .textarea {
 	font-family: 'Helvetica', 'Arial', sans-serif;
-	font-size: 3vh;
+	font-size: 2vh;
 	height: 25vh;
 	width: 50vw;
 }
