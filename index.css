@@ -106,17 +106,19 @@ table {
 	background-color: black;
 }
 
-.link_butt {
+#ppi_butt {
 	font-family: 'Helvetica', 'Arial', sans-serif;
 	font-size: 4vh;
 	font-weight: bold;
-	border: 4px solid white;
+	border: 4px solid black;
 	background-color: black;
 	color: white;
+	border-color: white;
 	border-radius: 6px;
 	cursor: pointer;
+	margin-bottom: 1vh;
 }
-.link_butt:hover {
+#ppi_butt:hover {
 	border: 4px solid gray;
 }
 
