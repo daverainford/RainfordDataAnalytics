@@ -203,7 +203,7 @@ table {
 }
 
 table, th, td {
-	width: 100%;
+	width: 75vw;
 	border: 1.5px solid;
 	margin: 0 auto;
 }
@@ -216,7 +216,7 @@ th {
 
 td {
 	font-family: 'Helvetica', 'Arial', sans-serif;
-	font-size: 1vh;
+	font-size: 1.3vh;
 }
 
 .proj_text {
