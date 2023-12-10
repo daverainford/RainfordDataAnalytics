@@ -75,15 +75,14 @@
 			<img src="charts/cluster_network.svg" id = 'ppi'><br>
 			<br>
 			<p class = 'proj_text'>
-				After all DEG’s were identified, DEG’s that were above 1.5 log fold change (logFC) and below -1.5 logFC were filtered out. After 
-				After all DEG’s were identified, DEG’s that were between 1.5 log fold change (logFC) and  -1.5 logFC were filtered out. After 
-				differential gene expression analysis was complete, a DEG PPI-network was constructed using STRING db’s online tool (figure 2). 
+				After all DEG’s were identified, DEG’s that were above 1.5 log fold change (logFC) and below -1.5 logFC were filtered out. 
+				Upon filtering, a DEG PPI-network was constructed using STRING db’s online tool (figure 2). 
 				Once the PPI-network was constructed, MCL gene clustering with an inflation parameter of 3 was performed. The 
 				clusters underwent filtering, excluding clusters with less than 6 genes and those that did not have interactions with 
 				the rest of the PPI-network, leaving 24 gene clusters remaining. 
 				The remaining clusters underwent pathway analysis using Cytoscape’s NDEx iQuery with a p-value cutoff of 0.5. Nine of the 
-				clusters that were associated with  tumorogenesis, growth, and proliferation pathways were down-selected. These pathways are described in table 1, 
-				and their differential expression visualized in figure 4.
+				clusters that were associated with  tumorogenesis, growth, and proliferation pathways were down-selected. These pathways 
+				are described in table 1, and their differential expression visualized in figure 4.
 			</p><br>
 			<br>
 			<label class = 'text_label'>Table 1: Pathyway Function</label><br>
